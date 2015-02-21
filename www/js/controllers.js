@@ -31,6 +31,10 @@ angular.module('starter.controllers', [])
 	};
 })
 
+.controller('DoneCtrl', function($scope, CashFlow) {
+	
+})
+
 
 
 
