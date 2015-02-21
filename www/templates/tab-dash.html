@@ -6,8 +6,19 @@
 		</a>
 	</ion-nav-buttons>
 
-	<ion-content class="padding">
-		
-	</ion-content>
+	<!--<ion-content class="padding">
+		<ul class="list">
+			<li class="item" ng-repeat="l in lista track by $index" ng-click="delete(l)">
+				{{l.task}}
+			</li>
+		</ul>
+	</ion-content>-->
+
+	<ion-list>
+		<ion-item ng-repeat="l in lista track by $index" ng-click="delete(l)">
+			{{l.task}}
+		</ion-item>
+	</ion-list>
+	
 	
 </ion-view>
