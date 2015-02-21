@@ -14,12 +14,13 @@ angular.module('starter.controllers', [])
 	$scope.new.init = function(){
 		$scope.new.task = '';
 		//$scope.new.amount = '';
-		$scope.new.category = '';
+		//$scope.new.category = '';
 	};
 	
 	$scope.new.submit = function(){
-		CashFlow.add($scope.new.category, $scope.new.task);
-		$state.go('tab.cashflow');
+		//CashFlow.add($scope.new.category, $scope.new.task);
+		CashFlow.add($scope.new.task);
+		$state.go('tab.dash');
 	};
 	
 	$scope.categories = FlowType.all();
