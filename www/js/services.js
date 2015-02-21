@@ -24,11 +24,18 @@ angular.module('starter.services', [])
 			return cashFlow
 		},
 		
-		add: function(type, amount, description){
+		/* add: function(type, amount, description){
 			cashFlow.push({
 				type: type,
 				amount: amount,
 				description: description,
+				created_at: new Date()
+			});
+			this.save();
+		}, */
+		add: function(task){
+			cashFlow.push({
+				task: task,
 				created_at: new Date()
 			});
 			this.save();

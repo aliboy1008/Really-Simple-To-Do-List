@@ -1,4 +1,4 @@
-<ion-view view-title="Cash Flow New">
+<ion-view view-title="Add New Task">
 	
 	<ion-content>
 		<form ng-submit="new.submit()">
@@ -13,10 +13,10 @@
 					<input ng-model="new.amount" type="number" required>
 				</label>-->
 				
-				<label class="item item-input item-select">
+				<!--<label class="item item-input item-select">
 					<span class="input-label">Category</span>
 					<select ng-model="new.category" ng-options="key as value.name group by value.isIncome?'Income' : 'Expense' for (key, value) in categories"></select>
-				</label>
+				</label>-->
 			</div>
 			<button type="submit" class="button button-positive button-full">Add</button>
 		</form>
